@@ -1,0 +1,9 @@
+<app-author-detail
+    *ngFor="let author of authors"
+    [author]="author"
+    (deleteAuthor) = deleteAuthorList($event)
+  ></app-author-detail>
+
+  <br>
+  <input type="text" [value]='valu'>
+  <input type="text" [(ngModel)]='valu'>
