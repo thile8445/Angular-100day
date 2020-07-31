@@ -15,6 +15,7 @@ export class EmployeeListComponent implements OnInit {
     private router : Router) { }
 
   ngOnInit(): void {
+    this.reloadData();
   }
   reloadData() {
     this.employees = this.employeeService.getEmployeesList();
